@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Tech Creative Studio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Z-Tech</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#company">Company</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- LOGIN SECTION -->
+    <section class="login-section">
+        <input type="email" id="emailInput" placeholder="Enter your email..." />
+        <button onclick="loginUser()">Login</button>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="title">Empowering Your Digital Vision</h1>
+            <p class="subtitle">
+                Spesialis UI/UX Design • Frontend Development • Creative Web Experience
+            </p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- COMPANY PROFILE -->
+    <section id="company" class="company">
+        <h2 class="section-title">About Z-Tech Creative Studio</h2>
+
+        <div class="company-wrapper">
+            <div class="company-text">
+
+                <h3>Who We Are</h3>
+                <p>
+                    Z-Tech Creative Studio adalah perusahaan teknologi yang berfokus pada pengembangan
+                    UI/UX Design dan Web Development. Kami menciptakan pengalaman digital yang elegan,
+                    intuitif, dan memadukan estetika dengan teknologi modern.
+                </p>
+
+                <h3>Our Vision</h3>
+                <p>
+                    Menjadi studio digital terdepan yang menghadirkan pengalaman web paling futuristik
+                    dan human-centered di Asia Tenggara.
+                </p>
+
+                <h3>Our Mission</h3>
+                <ul>
+                    <li>Memberikan desain UI/UX yang kreatif dan berkualitas tinggi.</li>
+                    <li>Mengembangkan website responsif, cepat, dan modern.</li>
+                    <li>Membangun identitas digital yang kuat bagi setiap brand.</li>
+                    <li>Menghadirkan inovasi teknologi yang relevan dengan masa depan.</li>
+                </ul>
+
+                <h3>Our Values</h3>
+                <ul>
+                    <li>✨ Creativity</li>
+                    <li>⚡ Innovation</li>
+                    <li>🤝 Collaboration</li>
+                    <li>💎 Excellence</li>
+                </ul>
+
+            </div>
+
+            <div class="company-image"></div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+        <h2 class="section-title">Our Expertise</h2>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>UI/UX Design</h3>
+                <p>Crafting intuitive, modern, and human-centered digital experiences.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Frontend Development</h3>
+                <p>Responsive, elegant, and interactive websites using modern technologies.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Brand Identity</h3>
+                <p>Building visual identity that strengthens your company's character.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item"></div>
+            <div class="portfolio-item"></div>
+            <div class="portfolio-item"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Let's Work Together</h2>
+        <p>Ready to start a project or want to collaborate?</p>
+        <a href="mailto:hello@ztech.com" class="contact-btn">Contact Us</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2025 Z-Tech Creative Studio — All Rights Reserved.
+    </footer>
+
+    <!-- FLOATING MESSAGE BUTTON -->
+    <div class="message-btn" onclick="toggleMessageBox()">💬</div>
+
+    <!-- POPUP -->
+    <div class="message-box" id="msgBox">
+        <h3>Send us a message</h3>
+        <textarea placeholder="Write your message..."></textarea>
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
